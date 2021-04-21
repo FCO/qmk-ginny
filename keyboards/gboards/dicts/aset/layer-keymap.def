@@ -2,42 +2,48 @@
 PRES(AL,                                                      KC_LSFT)
 PRES(AR,                                                      KC_SPC)
   
-// Layer Switches 
-// To Number
-SPEC(      AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
-SPEC(NUM | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
-SPEC(CMD | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
-SPEC(USR | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
+//// Layer Switches 
+//// To Number
+//SPEC(      AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
+//SPEC(NUM | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
+//SPEC(CMD | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
+//SPEC(USR | AA | AT | AN | AP,                                 SPEC_STICKY, NUM)
+//
+//// To Command
+//SPEC(      AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
+//SPEC(NUM | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
+//SPEC(CMD | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
+//SPEC(USR | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
+//
+//// To User
+//SPEC(      AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
+//SPEC(NUM | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
+//SPEC(CMD | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
+//SPEC(USR | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
 
-// To Command
-SPEC(      AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
-SPEC(NUM | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
-SPEC(CMD | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
-SPEC(USR | AS | AE | AI | AO,                                 SPEC_STICKY, CMD)
 
-// To User
-SPEC(      AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
-SPEC(NUM | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
-SPEC(CMD | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
-SPEC(USR | AA | AS | AE | AT | AN | AI | AO | AP | AR | AL,   SPEC_STICKY, USR)
-
-
-PRES(AS | AT | AN,           KC_1)
-PRES(AS | AT | AI,           KC_2)
-PRES(AS | AT | AN | AI,      KC_3)
-PRES(AS | AT | AO,           KC_4)
-PRES(AS | AT | AN | AO,      KC_5)
-PRES(AS | AT | AI | AO,      KC_6)
-PRES(AS | AT | AN | AI | AO, KC_7)
-PRES(AS | AT | AP,           KC_8)
-PRES(AS | AT | AN | AP,      KC_9)
-PRES(AS | AT | AI | AP,      KC_0)
+PRES(AS | AT | AN,                KC_1)
+PRES(AS | AT | AI,                KC_2)
+PRES(AS | AT | AN | AI,           KC_3)
+PRES(AS | AT | AO,                KC_4)
+PRES(AS | AT | AN | AO,           KC_5)
+PRES(AS | AT | AI | AO,           KC_6)
+PRES(AS | AT | AN | AI | AO,      KC_7)
+PRES(AS | AT | AP,                KC_8)
+PRES(AS | AT | AN | AP,           KC_9)
+PRES(AS | AT | AI | AP,           KC_0)
+PRES(AS | AT | AN | AI | AP,      KC_MINS)
+PRES(AS | AT | AO | AP,           KC_EQL)
+PRES(AS | AT | AN | AO | AP,      KC_BSLASH)
+PRES(AS | AT | AI | AO | AP,      KC_SLASH)
+PRES(AS | AT | AN | AI | AO | AP, KC_COMMA)
 
 PRES(AA | AS | AE | AT,      KC_TAB)
 PRES(AA | AS | AN | AI,      KC_ESC)
 PRES(AA | AS | AN,           KC_SCLN)
 PRES(AA | AS | AO,           KC_LBRACKET)
 PRES(AA | AS | AP,           KC_RBRACKET)
+KEYS(AA | AS | AO | AP, cmb_68737f3c98f133fr, {KC_LCMD, KC_TAB, COMBO_END})
 
 PRES(AA | AT | AN,           KC_LEFT)
 PRES(AA | AT | AI,           KC_UP)
@@ -53,10 +59,8 @@ KEYS(AA | AT | AO | AP, cmb_68737f3c98f133fo, {KC_LALT, KC_RIGHT, COMBO_END})
 KEYS(AA | AT | AN | AI | AO, cmb_68737f3c98f133fp, {KC_LCTRL, KC_A, COMBO_END})
 KEYS(AA | AT | AI | AO | AP, cmb_68737f3c98f133fq, {KC_LCTRL, KC_E, COMBO_END})
 
-KEYS(AA | AS | AE | AN, cmb_68737f3c98f133ff, {KC_LSFT, KC_4, COMBO_END})
-KEYS(AA | AS | AE | AI, cmb_68737f3c98f133fg, {KC_LSFT, KC_2, COMBO_END})
-KEYS(AA | AS | AE | AO, cmb_68737f3c98f133fh, {KC_LSFT, KC_5, COMBO_END})
-KEYS(AA | AS | AE | AP, cmb_68737f3c98f133fi, {KC_LSFT, KC_8, COMBO_END})
+KEYS(AA | AS | AE | AN, cmb_68737f3c98f133ff, {KC_LCTRL, KC_LSFT, KC_TAB, COMBO_END})
+KEYS(AA | AS | AE | AP, cmb_68737f3c98f133fi, {KC_LCTRL, KC_TAB, COMBO_END})
 
 KEYS(AS | AE | AT | AN, cmb_68737f3c98f133fj, {KC_LCMD, KC_C, COMBO_END})
 KEYS(AS | AE | AT | AI, cmb_68737f3c98f133fk, {KC_LCMD, KC_V, COMBO_END})
